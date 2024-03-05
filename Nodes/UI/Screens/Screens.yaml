@@ -6373,6 +6373,34 @@ Children:
   Id: g=f2a5915a7647ac8bae82ab6891575378
   Supertype: Screen
   ReferenceType: HasComponent
+  Children:
+  - Name: SpinBox1
+    Id: g=00a48414747c33b69ce3c69bd4023172
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Id: g=3d2e8d36002debdc6fe0d2a9e847dc42
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+    - Name: Width
+      Id: g=2ee83110d47f20ee9a06f5478d62f4f2
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: LeftMargin
+      Id: g=18befed4f86f7dac3b6353636c5bb5e3
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: TopMargin
+      Id: g=68a9e1f4c9766f2ea4cd3b2220c1948d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 38.0
 - Name: Screen9
   Id: g=f4a2b0e56dfeb2b94d0b9ae776e5da6d
   Supertype: Screen
