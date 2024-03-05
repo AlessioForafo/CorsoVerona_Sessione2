@@ -1,0 +1,104 @@
+Name: Recipes
+Id: g=2e29d18c056a79c531781e2489a37f4e
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Id: g=5134e120940225a0c6a0925b96164115
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Id: g=3ae2ffe39f458457af8d8cf28385c214
+    Type: BaseObjectType
+    Children:
+    - Name: Variable1
+      Id: g=b4432b5d81383086280da68cb73d4db0
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Variable2
+      Id: g=69e9ce9d5f6a72d106952ab052ad26d8
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Variable3
+      Id: g=8583067a375ae3d568766189b186a11e
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Class: Reference
+    Target: ns=23;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=60
+    Direction: Forward
+  - Name: Store
+    Id: g=4ad8a00b2d963969f000b0e0629362dd
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/CorsoVerona_Sessione2/DataStores/EmbeddedDatabase1"
+    Children:
+    - Name: Kind
+      Id: g=da0ffdceab0e75ff60dd3d096c397c13
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: TargetNode
+    Id: g=e1282a7ef2592e3c6212cb543831fe08
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/CorsoVerona_Sessione2/Model"
+    Children:
+    - Name: Kind
+      Id: g=cb3568cd78587c556d1d571970ecbbdd
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EditModel
+    Id: g=c0ff554cd91a399f91289105bcf0341b
+    Type: BaseObjectType
+    Children:
+    - Name: Variable1
+      Id: g=e164ca0887e223620eca0f11985ec836
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Variable2
+      Id: g=2d44c3d55e71675fafaa3d741a71d1dd
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Variable3
+      Id: g=e1d6cf9f72e1f301ace0101dd141508c
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0

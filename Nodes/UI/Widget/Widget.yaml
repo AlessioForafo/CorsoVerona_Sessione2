@@ -1,0 +1,121 @@
+Name: Widget
+Id: g=d2f8da00feb7857e907ab4e12058d9e4
+Type: FolderType
+Children:
+- Name: DisplayConUnitaMisura
+  Id: g=f2d6eb988cf1e096a9a999e758e547e0
+  Supertype: RowLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=95e3981da82847d79ef3ab0919512469
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 50.0
+  - Name: Height
+    Id: g=3f7152af22b94a49a59b0872e80f5427
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 50.0
+  - Name: SpinBox1
+    Id: g=82011992215ec74e28753aa7d9cad65e
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Id: g=dff47e09d320f16dcc9b0117f2784623
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=fce58a095e85c022be7f6ca64de06197
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../AnalogVariable1"
+        Children:
+        - Name: Mode
+          Id: g=88931e270c3af814ddcb78e29cb120eb
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+        - Name: EUMode
+          Id: g=3439b539597f2789f1e254c49e3b71cc
+          Type: BaseVariableType
+          DataType: DynamicLinkEUMode
+          Value: 0
+    - Name: Width
+      Id: g=0cde8715e4722bc39143dd660cf56473
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+  - Name: Label1
+    Id: g=45748dbd7bb1c4a8a743392dfddb21bf
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=aad2b622d77e3e9231dc18c02157f4f2
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Id: g=e7e757ceef35e4072cbdf4795eb0fbb5
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../AnalogVariable1/EngineeringUnits/DisplayName"
+        Children:
+        - Name: EUMode
+          Id: g=59fb65a0a458ea29fa12a476e8a27b91
+          Type: BaseVariableType
+          DataType: DynamicLinkEUMode
+          Value: 0
+  - Name: AnalogVariable1
+    Id: g=8102c8f52ad7d78e108b08a423e7fa09
+    Type: AnalogItemType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: EURange
+      Id: g=36f63439c5666a4315a9e0f9977a3c5e
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Id: g=37218084385b945ea7856d616e93e9ac
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 0.0
+      - Name: High
+        Id: g=f02e99ae075522485b5d7783645cef74
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 0.0
+    - Name: EngineeringUnits
+      Id: g=08fd22fe05dcfc5696cfe073ed9309a2
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Id: g=f97b352929262a6738c186020cf092c8
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: 4408652
+      - Name: DisplayName
+        Id: g=99185e1d34c1cee4a97c60fe98e37db6
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Id: g=00fc552546e9d523603df17179be80d9
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}

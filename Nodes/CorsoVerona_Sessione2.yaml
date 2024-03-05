@@ -1,0 +1,101 @@
+Name: CorsoVerona_Sessione2
+Id: g=6e6c82838dab32e03b21f0de28ca1465
+Type: ProjectFolder
+Children:
+- Name: Localization
+  Id: g=0ccb62db3e40f56e47bda69533a7279c
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Id: g=837e9a04f73b2b67343d4cb4860a2598
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US","it-IT"]
+  - Name: LocaleFallbackList
+    Id: g=9691d427db18a0a62b1eb1014b3bf29e
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: MeasurementSystemMap
+    Id: g=ae968d866ada7aeffb4d55e8b5cbf600
+    Type: BaseDataVariableType
+    DataType: MeasurementSystemMapItem
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+- Name: Authentication
+  Id: g=c7523ec339961da7fe188e63933cd25b
+  Type: PropertyGroup
+  Children:
+  - Name: DefaultUserFolder
+    Id: g=7f629b16107959ba08a5685267d0be4d
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/CorsoVerona_Sessione2/Security/Users"
+    Children:
+    - Name: Kind
+      Id: g=ddb2eb76a3f7c1c72d1be49721a90cd1
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: AuthenticationMode
+    Id: g=cd96ba04cebd9c7b3d7be2807fae360f
+    Type: BaseDataVariableType
+    DataType: AuthenticationMode
+    Value: 0
+- Name: PasswordPolicy
+  Id: g=8513173c4db4e126d4d4262aae167dfd
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=310099c479ef32d36e087824d1c2195a
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=95bcb94fda9d30e4fc670116a76c0ad3
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=7dd412b29ee33a83a3a4612d7860faf3
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=7bb60be39bca12dd6fa8a1fac7185895
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 8
+- Name: AlarmConfiguration
+  Id: g=aa1bb608ea42cf716564e08963f58a20
+  Type: PropertyGroup
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: System/System.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: RecipeSchema1
+  Id: g=4359505a37005cb00d2ce31b9c2963b2
+  Type: Alias
+  DataType: NodeId
+  Value: "/Objects/CorsoVerona_Sessione2/Recipes/RecipeSchema1/EditModel"
+  Children:
+  - Name: Kind
+    Id: g=ff9a92f2f7ab311a43a311b860e0e638
+    Type: PropertyType
+    DataType: NodeId
+    Value: "/Objects/CorsoVerona_Sessione2/Recipes/RecipeSchema1/EditModel"

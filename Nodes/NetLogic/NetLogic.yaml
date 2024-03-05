@@ -1,0 +1,122 @@
+Name: NetLogic
+Id: g=c64f7c89a296d0ac77b93e66435c247f
+Type: NetLogicCategoryFolder
+Children:
+- Name: DataLoggerExporter
+  Id: g=b48dca069ff2f2c8f9254814c1274c92
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: CSVPath
+    Id: g=f7dd6980b2ade544b8d754d17a8b87cb
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/Temp/DataLogger.csv"
+  - Name: FieldDelimiter
+    Id: g=db121c6cb0390a9fdb98813fbba2aed6
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: Table
+    Id: g=02fd2a6a69fbf31e21956a29b2b8cd6f
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"1ba5672b3fbf2cfbe9a35c708a43043f","Namespace":7}
+    Children:
+    - Name: Kind
+      Id: g=c44ca44f2dd0b8a3eff5ec922413efbb
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
+  - Class: Method
+    Name: Export
+    Id: g=99064bb0cd1bbe11f99f9fb97628e9d3
+  - Name: Query
+    Id: g=3ff505e1b39c1da9e2877e78fc3c45fe
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: StringFormatter1
+      Id: g=349c501804cb867c9aecfb34a491127c
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=d0fc976d164cbfcf8f6debd2caf1f7e5
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"Timestamp BETWEEN {1:sql_literal} AND {2:sql_literal}"}
+      - Name: Source1
+        Id: g=31f7cf080df08389054eeb9bc72a2471
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=f6bcf64231a67050eacb449e1882aaf5
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../From"
+      - Name: Source2
+        Id: g=f5d3b7a1bc68e79765b847c027f30934
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=2b85c038230fd919877d9de6ce31a039
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../To"
+  - Name: From
+    Id: g=3a9550f46286d94656957bfe7f5bea60
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: To
+    Id: g=8a90782798db0d30d06c885bfd077831
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: WrapFields
+    Id: g=9c02dc6e3688c5a31edf8fb01dfb990d
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: DesignTimeNetLogic1
+  Id: g=38bec4b88818e496b47f38eb6e476f8b
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Id: g=06d01e0fdaca594caebd98c74816844d
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: LogMessaggio
+    Id: g=e6b532bae06df6d97fc0017b597ba0da
+  - Class: Method
+    Name: CreaVariabili
+    Id: g=97da47b3df5493fa60f9771258017eec
+- Name: RuntimeNetLogic1
+  Id: g=64818e27f8fc1f5dab0259eee2c7e153
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: ScriviMessaggioCustom
+    Id: g=8bf2d13b92960afdb1be9f1f58a76775
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=386f28cbb3087a654f61a25c312ed29e
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"testoMessaggio","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: OperazioneTerminata
+    Id: g=5c530ce26196bc096626c8b6b19f79ac
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false

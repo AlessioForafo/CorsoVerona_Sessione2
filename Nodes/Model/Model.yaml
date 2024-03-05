@@ -1,0 +1,27 @@
+Name: Model
+Id: g=8a783cd53a53bfd162ee9454098897b9
+Type: ModelCategoryFolder
+Children:
+- Name: Variable1
+  Id: g=ad340dcc35098642a2e187f552eb56c4
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable2
+  Id: g=bffbd3f5e973f1af33ad89981ac2d4ab
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable3
+  Id: g=987917ba0eca45609bf21514d370b8a4
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: EngineeringUnitDictionary1
+  Id: g=86d1d9993377f3b45c5550b27e1a9f63
+  Type: EngineeringUnitDictionary
+  DataType: EngineeringUnitDictionaryItem
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: [{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":0,"DisplayName":{"LocaleId":"en-US","Text":"TempDelta"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"PhysicalDimension":3,"Slope":18.0,"Intercept":0.0}}]
+- File: VariabiliCreateDaCodice/VariabiliCreateDaCodice.yaml

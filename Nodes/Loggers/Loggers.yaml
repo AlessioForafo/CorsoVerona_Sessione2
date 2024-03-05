@@ -1,0 +1,140 @@
+Name: Loggers
+Id: g=fb538d7019b2606b00e5de51cc58a384
+Type: LoggersCategoryFolder
+Children:
+- Name: DataLogger1
+  Id: g=9e9f026616cd0ea408fd06c4abdd0c14
+  Type: DataLogger
+  Children:
+  - Name: SamplingMode
+    Id: g=6e8e83518f94d5b144573cdfdf8dc7bb
+    Type: PropertyType
+    DataType: SamplingModeEnum
+    Value: 1
+  - Name: Store
+    Id: g=363d8f40acf33b338310008e1337b4b9
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/CorsoVerona_Sessione2/DataStores/ODBCDatabase1"
+    Children:
+    - Name: Kind
+      Id: g=504acf5c987e13c9ef11b217094efa55
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: VariablesToLog
+    Id: g=5f13c51f8bdd04fd9b6b37fc61b5ea50
+    Type: BaseObjectType
+    Children:
+    - Name: Variable1
+      Id: g=c5e70a7bedab154e7b936909ac3463bf
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Id: g=a57bde3d0c5e8f40e0604d2f9a608412
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Id: g=d22ab7659c54d23b596e5393f993af45
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Id: g=45a55ec51f895c6ef5a0739760239e18
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Id: g=accde66f0e222672105719d9e5b16baa
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Variable1"
+        Children:
+        - Name: Mode
+          Id: g=1b1c2f16e088c1573b2c812d0f9f5145
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Variable2
+      Id: g=a7ed5e4b83dd385b8149a086d6cde85b
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Id: g=b522d3a1d87444db4a1357ff96ae5a2b
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Id: g=8abdffbe33326ed5e864c11be0660030
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Id: g=aefad0f6e4ae0962309fb30f60bbceaf
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Id: g=d03425fcf83999b39f6c7dbe5a2e13cc
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Variable2"
+        Children:
+        - Name: Mode
+          Id: g=3a12ea05edbcc3469cf47d77984f28fb
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Variable3
+      Id: g=21b27e8d4f39913b9d15d6f32bdf52a6
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Id: g=0d4bb85eeae8ecfa89504984b3d1692e
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Id: g=09b0e727d9e393d819a9094412a641b2
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Id: g=32e4c3d8f19458597b19f6a10380d68a
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Id: g=1f89d20ef46cd80212b80f0f29c6e13e
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Variable3"
+        Children:
+        - Name: Mode
+          Id: g=3461aeeb2eb96350fbbf8373bcf0145b
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+  - Class: Reference
+    Target: ns=8;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Id: g=8568f8cb2d182ccd516a1e3b99317843
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: SamplingPeriod
+    Id: g=32ebf43d7c166e9c797f59253466a71f
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:1.0000000"

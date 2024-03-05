@@ -1,0 +1,1917 @@
+Name: LoginFormComponents
+Id: g=05d549050df3b3ac1fdb509e29abfb56
+Type: FolderType
+Children:
+- Name: Login
+  Id: g=ce814fddddd607c776a3b9a6e0b90c27
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=4fbf179682876eb00f410db66ee72b42
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=a8d237869064a809e41eeefbf4423742
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Username
+    Id: g=c8a88e84762e4245302b1fee0179733c
+    Type: ComboBox
+    Children:
+    - Name: Text
+      Id: g=4aa6ac073b65d9ca95b7d2013e603174
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Model
+      Id: g=a847877dabdf5eee91baa709830a2f29
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: ItemKind
+        Id: g=8d0fcaf0a3e89d4495547fb8a358fbec
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: Kind
+        Id: g=ca7c55462b90cdbaf715a91375a6d0f6
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: DynamicLink
+        Id: g=49ba9fd74cd1dbb8f0020846a5de7ecf
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Users}@NodeId"
+    - Name: SelectedValue
+      Id: g=17e451ccdd9953fdb61b902619d91770
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+    - Name: SelectedItem
+      Id: g=c489f7930aa50f32e3f9e9285a23963a
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=974383fe315fef5129bc9c25da0453a5
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: UISelectedItem
+      Id: g=ac574ec3fe25af55ddbee8991507d996
+      Type: BaseDataVariableType
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: UISelectedValue
+      Id: g=5a48d8587f66db8ffcb26401f76bd8df
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      AccessLevel: Read
+    - Class: Reference
+      Target: ns=3;i=480
+    - Name: Width
+      Id: g=8fd104c4eb82b9c60648a03494e71aff
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 150.0
+    - Name: Item
+      Id: g=398d0658684c1ccedeb54444be8469ba
+      Type: Alias
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=6f2a7f347f5fbeb2fbde4918240e5c24
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: HorizontalAlignment
+      Id: g=f9c4c0f6065cb02f9aabf12d1759f218
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Mode
+      Id: g=9c72afa486af5eed675184662f6f7f8b
+      Type: BaseVariableType
+      DataType: ComboBoxModeEnum
+      Value: 2
+  - Name: Password
+    Id: g=f8bfa2b84cf56cb90203ac53909cc5fb
+    Type: TextBox
+    Children:
+    - Name: Text
+      Id: g=81367e17e08cf90b0270eb66f15b1b50
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Width
+      Id: g=d11d58f98c217b8ae69d54145a98f3ba
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 150.0
+    - Name: TopMargin
+      Id: g=a100c9aa374d375321e4590333e4f642
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Id: g=24514df6fb629462029d494bffd2f642
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: PlaceholderText
+      Id: g=792462b191b85ff0445fc24586dc1796
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"Password"}
+    - Name: ContentType
+      Id: g=0dc8e9beca2f1e424e8df50722385245
+      Type: BaseVariableType
+      DataType: InputTypeEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: ValueChangeBehaviour
+      Id: g=fd9a24c66434cfcd719a4d3648aae684
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
+      Value: 1
+  - Name: LoginButton
+    Id: g=bbb4fa694bea6b335922ddabaf5c29b6
+    Type: Button
+    Children:
+    - Name: Text
+      Id: g=5ebcfaeb38e155a39937eded67f8573b
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"Login"}
+    - Name: TopMargin
+      Id: g=c22acab552f57794bff734695664f170
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 105.0
+    - Name: HorizontalAlignment
+      Id: g=9f048daaaa1cfb506129dd2af02fc099
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Appearance
+      Id: g=8a0038d8dbb75c9542d150c0246d08be
+      Type: BaseVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "accent"
+    - Name: LeftMargin
+      Id: g=bfbf1c1361945ec9b4fc0d09df0bc2cc
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: RightMargin
+      Id: g=c387106a909c815ccf9d20af352d1f97
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: MouseClickEventHandler1
+      Id: g=45ac9b3d4ce7e09f272375d8666d69ed
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=03f088264262401cf7d856cc36f3d28f
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Id: g=bc8bd3715c69c574b7e5df467c3b251b
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=858273f790c093a56ce3fe7e9d57eb5b
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Id: g=9e4b53bbfe0e99636f8cd34999358864
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=7ea33b49fc0848409e6ca0dfcddb1a42
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Id: g=db000dfdae0035cd311fe8806aa8dd93
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../LoginButtonLogic@NodeId"
+              Children:
+              - Name: Mode
+                Id: g=b9936b2dfd811d5d8c25071ff41c9377
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Id: g=c74bc0b24973db3af25663600a41b8d4
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PerformLogin"
+          - Name: InputArguments
+            Id: g=7dbfd4122636a1c69e01d0b7809bf7ec
+            Type: BaseObjectType
+            Children:
+            - Name: username
+              Id: g=359155af4f53489acf3ac4cb3dea4528
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Id: g=6e7b950e802a4d1d8450b781d6474bbf
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../Username/Text"
+                Children:
+                - Name: Mode
+                  Id: g=23aecebc804166f3f1c9e8a8c4b4f972
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: password
+              Id: g=beea8dfa6a7d4bdf9ac726f7471b65cd
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Id: g=d2ccb4d9756cf1dea881f560f039dcc6
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../Password/Text"
+                Children:
+                - Name: Mode
+                  Id: g=c8bf079b079de7bf634ad747810a1aae
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+      - Name: EventArguments
+        Id: g=69c00b054bcb8cad686e07e507b9db58
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Id: g=6b8480a838fb632a29b353eba053affc
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Id: g=b09e59c5a4ec4035c5c70c646324a47d
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Id: g=bc301c145a0cf4ff6125ff8cc81b6f84
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Id: g=ac2f7cb28bab64d9bef1144a75266012
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Id: g=3d01cc2d281ca517122eb81933635d5e
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Id: g=088b9306022f3ad8e25e34fa926a2e1d
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Id: g=6cdc0385f8e468ce2089df1532b3a921
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Id: g=1912a047ba9275f60be3f9bf7d82ef50
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+    - Name: LoginButtonLogic
+      Id: g=8c1788aac85926d70937967f92b82987
+      Type: NetLogic
+      Children:
+      - Class: Method
+        Name: PerformLogin
+        Id: g=f66551e603188a842cb4d1bddac9b3e0
+        Children:
+        - Name: ns=0;InputArguments
+          Id: g=1a1351dde41f121e516c8a469062ed34
+          Type: BaseVariableType
+          DataType: Argument
+          ReferenceType: HasProperty
+          ValueRank: OneDimension
+          ArrayDimensions: [0]
+          Value: [{"TypeId":{"Id":296},"Body":{"Name":"username","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"password","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: LoginFormOutputMessage
+    Id: g=a047339779b65c8540c4ad4e08bbba1f
+    Type: Label
+    Children:
+    - Name: TopMargin
+      Id: g=dae0de989e5dfca86e182afb398eb3c1
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 160.0
+    - Name: HorizontalAlignment
+      Id: g=280bb9512ce3123fca71ca47bad8255e
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Message
+      Id: g=cdc30d4ff3b1890f22579a8935a31bd4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+      Children:
+      - Name: KeyValueConverter1
+        Id: g=30263b5cc98e8d0586e6f6f088236127
+        Type: ValueMapConverter
+        Children:
+        - Name: Source
+          Id: g=3f48a738e81c38f7a4dc505c73f4a869
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=7067ff846c2a9df54dbfeee7fff5ce2a
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../LoginResultCode"
+        - Name: Pairs
+          Id: g=589e8de47816dce236daf5b7cb611f96
+          Type: BaseObjectType
+          ModellingRule: None
+          Children:
+          - Name: Pair
+            Id: g=951d11d6d8434ecf7e279f46316f6fe8
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Id: g=3a8b0eb3420138f54d548134d2aabf5c
+              Type: BaseDataVariableType
+              DataType: UInt32
+              ModellingRule: None
+              Value: 0
+            - Name: Value
+              Id: g=dcd4d739806a0b4816b2c80870372625
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: None
+              Value: {"NamespaceIndex":7,"TextId":"LoginFormLoginSuccessful"}
+          - Name: Pair1
+            Id: g=7499733a6a17afe637d85e680127800f
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Id: g=3d94192eb5dc52766170a10e4714f4e7
+              Type: BaseDataVariableType
+              DataType: UInt32
+              ModellingRule: None
+              Value: 1
+            - Name: Value
+              Id: g=f5ed62ac8b3af506a8edaec89d9dea18
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: None
+              Value: {"NamespaceIndex":7,"TextId":"LoginFormAuthenticationFailed"}
+          - Name: Pair2
+            Id: g=5bd59ffa373bb22e4a0103e7492b7d14
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Id: g=682c9ee59acb13a5765bf3de44a6989b
+              Type: BaseDataVariableType
+              DataType: UInt32
+              ModellingRule: None
+              Value: 2
+            - Name: Value
+              Id: g=eb999e7fc9ee7f9746960484acd589d1
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: None
+              Value: {"NamespaceIndex":7,"TextId":"LoginFormPasswordExpired"}
+          - Name: Pair3
+            Id: g=49242a1e7f90edb792a10fa497e25530
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Id: g=bf0e32073376691b809cb56713f7b463
+              Type: BaseDataVariableType
+              DataType: UInt32
+              ModellingRule: None
+              Value: 3
+            - Name: Value
+              Id: g=c22732ff919789bbd6c0a15da498113e
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: None
+              Value: {"NamespaceIndex":7,"TextId":"LoginFormAuthenticationFailed"}
+          - Name: Pair4
+            Id: g=4bc1622d053ffedb79785e48d1df1110
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Id: g=751e1b68a50f6e03f0077f2f278d299c
+              Type: BaseDataVariableType
+              DataType: UInt32
+              ModellingRule: None
+              Value: 4
+            - Name: Value
+              Id: g=c4dd5d3075f923494369cd0c2a649153
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: None
+              Value: {"NamespaceIndex":7,"TextId":"LoginFormAuthenticationFailed"}
+          - Name: Pair5
+            Id: g=5e82b3b05ba95c017d009255dec59531
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Id: g=1a246db636e7ec6287113b01b67af505
+              Type: BaseDataVariableType
+              DataType: UInt32
+              ModellingRule: None
+              Value: 5
+            - Name: Value
+              Id: g=33f0d97a0328b96fa08b16718e68a0f8
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: None
+              Value: {"NamespaceIndex":7,"TextId":"LoginFormAuthenticationFailed"}
+          - Name: Pair6
+            Id: g=66bdba1ea30b85a020ee925e74c05c87
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Id: g=2fb6dad54b6045027baf9f57935fb355
+              Type: BaseDataVariableType
+              DataType: UInt32
+              ModellingRule: None
+              Value: 6
+            - Name: Value
+              Id: g=7b5242ff7cbe148428a4bb589d64a4fb
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: None
+              Value: {"NamespaceIndex":7,"TextId":"LoginFormAuthenticationFailed"}
+    - Name: LoginResultCode
+      Id: g=f02d788048afc11180c9aa2bb59b9751
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Text
+      Id: g=65564b1ab3186183fd1a881fefd2a2de
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Id: g=e104706698d88f83edc7041764bc88cb
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../Message"
+    - Name: LoginFormOutputMessageLogic
+      Id: g=0cf4109f85b847facd1620548eb02db3
+      Type: NetLogic
+      Children:
+      - Class: Method
+        Name: SetOutputMessage
+        Id: g=c7cfbb8c3e7a3c7d92b57312b283c046
+        Children:
+        - Name: ns=0;InputArguments
+          Id: g=340c46344b801b66dfeb2e1e05618b0a
+          Type: BaseVariableType
+          DataType: Argument
+          ReferenceType: HasProperty
+          ValueRank: OneDimension
+          ArrayDimensions: [0]
+          Value: [{"TypeId":{"Id":296},"Body":{"Name":"resultCode","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: Users
+    Id: g=4088ef436f10dcb7647e2d2d280000a7
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=43e90f586565e2ff1a240d8e59d49b9f
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: PasswordExpiredDialogType
+    Id: g=dd89ca65c1226c6164f5d78a36dfb836
+    Type: Alias
+    DataType: NodeId
+    Value: "/Objects/CorsoVerona_Sessione2/UI/LoginForm1/LoginFormComponents/LoginPasswordExpiredDialog"
+    Children:
+    - Name: Kind
+      Id: g=666776d2ccec28b4ab4b7de89418fc06
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Dialog"
+- Name: LoginPasswordExpiredDialog
+  Id: g=53b1bd1b17b4de66926108a7dfdf143e
+  Supertype: Dialog
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=3;i=519
+  - Name: Width
+    Id: g=5579cb1403ac7bc6d9e7396c94767fac
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=3a9e04ad3de88229ab90170c984b4127
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Background
+    Id: g=68a1063bf16f6694a1c2f7368812134e
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Id: g=127241f5b2b904f45477ce3ebf2e816f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Id: g=75a2f6750dc86b4ed830fa6ae02e941b
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: BorderThickness
+      Id: g=5830e7db4714fbc6bc45d0875c98829c
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: FillColor
+      Id: g=e94acff276c9576d677f5037a8d2e109
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#dcdcdc"
+    - Name: HorizontalAlignment
+      Id: g=f83156b081d5d18c0703cdfd59ca6124
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=893a426b28fe5291be43061ace733676
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Label1
+      Id: g=058a07978fd8764dda3f1bc47eb61c3e
+      Type: Label
+      Children:
+      - Name: Text
+        Id: g=8c6508bbb1a4499b82b3c8cbcb7030c5
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"NamespaceIndex":7,"TextId":"Your password is expired. Please enter a new one"}
+      - Name: HorizontalAlignment
+        Id: g=198a46a86182fc98fbace5907d2001e5
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: TopMargin
+        Id: g=11ade804ab76cf1b07a3e3beae514696
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 5.0
+      - Name: TextColor
+        Id: g=bac73601ba2a7d9ec0d7a93cca873a13
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#ff0000"
+      - Name: Width
+        Id: g=e7486f6871f424b2840087235eb1ea93
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 249.0
+      - Name: TextHorizontalAlignment
+        Id: g=a1e6e52c26d9985972d17194adec4bf5
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: WordWrap
+        Id: g=1325c53d41d52b3a6774b7f2f4c677bf
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
+    - Name: LoginChangePasswordForm1
+      Id: g=85c67e239f3b1e063ca8969a40452e7e
+      Type: LoginChangePasswordForm
+      Children:
+      - Name: Label1
+        Id: g=c5ede5034738da6550341029f627cb1b
+        Type: Label
+      - Name: OldPassword
+        Id: g=16acbd0a9d5e3dc89a9586f954dec4d9
+        Type: TextBox
+        Children:
+        - Name: Text
+          Id: g=e80e050511e2346b310d988d59d4b350
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: ValueChangeBehaviour
+          Id: g=56a8ef62855e24e05e0022867b99636d
+          Type: BaseDataVariableType
+          DataType: ValueChangeBehaviour
+          ModellingRule: Optional
+          Value: 1
+      - Name: Label2
+        Id: g=8345a159b07c4fa2f7e6ac2614031ea4
+        Type: Label
+      - Name: NewPassword
+        Id: g=6ed81518683817bd3a4e81daf0fcc467
+        Type: TextBox
+        Children:
+        - Name: Text
+          Id: g=8089a020b8dac61dd134f9ac4e488303
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: ValueChangeBehaviour
+          Id: g=aa1bfba721b0d6eec50ab2f265fd2745
+          Type: BaseDataVariableType
+          DataType: ValueChangeBehaviour
+          ModellingRule: Optional
+          Value: 1
+      - Name: Label3
+        Id: g=2261a776161d148e6382d74e7c369ae5
+        Type: Label
+      - Name: ConfirmPassword
+        Id: g=de7945e5c28c5d83abcfdbad68973661
+        Type: TextBox
+        Children:
+        - Name: Text
+          Id: g=138aab083ee15fc98d99b2ba42cb3520
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: ValueChangeBehaviour
+          Id: g=3e8dc244f52ce244ebb7e0f207e98529
+          Type: BaseDataVariableType
+          DataType: ValueChangeBehaviour
+          ModellingRule: Optional
+          Value: 1
+      - Name: ChangePasswordButton
+        Id: g=b2af24dbd33b65c473ee6e0833637674
+        Type: Button
+        Children:
+        - Name: LoginChangePasswordButtonLogic
+          Id: g=04d93e3549a8b5c5fa2051f50445ac74
+          Type: NetLogic
+          Children:
+          - Class: Reference
+            Target: g=f1305c0ed1577b7b4e4d535c1be4762a
+        - Name: MouseClickEventHandler1
+          Id: g=ca7c2d2bfb0034a34140a26a0a46ae8b
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Id: g=36d4642fbfe71b1ed82a8433c36515fe
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+          - Name: MethodsToCall
+            Id: g=37bb87388b6733c9aa2b0b24ad48b40b
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Id: g=535da5f44ebe10e418ec4beac12bc881
+              Type: BaseObjectType
+              Children:
+              - Name: ObjectPointer
+                Id: g=15e27328dec5d9f80cc80808e5c30417
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Id: g=bf1ef9553b1820f45542779a1659345e
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Id: g=d884c78b519d0b95ff97f181a29077c8
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../LoginChangePasswordButtonLogic@NodeId"
+                  Children:
+                  - Name: Mode
+                    Id: g=0073a9721d0ec4334e5377bd2cb71c4b
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: Method
+                Id: g=8d999f11f6c7bc230897589bc65c6d01
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "PerformChangePassword"
+              - Name: InputArguments
+                Id: g=e70d161866a488ac94fe2c2ef6f22844
+                Type: BaseObjectType
+                Children:
+                - Name: oldPassword
+                  Id: g=94dc0c3da316b33b6cd8d248ce976896
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+                  Children:
+                  - Name: DynamicLink
+                    Id: g=fd36baee22548d2765b404b181bfcc47
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../OldPassword/Text"
+                - Name: newPassword
+                  Id: g=ec9dafd0b13feb70ca9536835180efde
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+                  Children:
+                  - Name: DynamicLink
+                    Id: g=52a0c610ddad4527261a5444e4e426c6
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../NewPassword/Text"
+                - Name: confirmPassword
+                  Id: g=820d0acd4a56d58cae54cb233cbd1bb5
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+                  Children:
+                  - Name: DynamicLink
+                    Id: g=5d2fa4b793603e1e3853e268313101ea
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../ConfirmPassword/Text"
+          - Name: EventArguments
+            Id: g=d0c28c139651574c7fc8849614fd33d4
+            Type: MouseClickEvent
+            Children:
+            - Name: EventId
+              Id: g=bd87e253ddac0054a8e8808bd0b5605d
+              Type: PropertyType
+              DataType: ByteString
+              Value: ""
+            - Name: EventType
+              Id: g=6c41bc55249d88376294f7caf6ce144e
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: SourceNode
+              Id: g=5c220dbc0e49bdd37b0c7aebef2d97e6
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: SourceName
+              Id: g=b269e5c063cd0eadad9806e4e11c0de9
+              Type: PropertyType
+              DataType: String
+              Value: ""
+            - Name: Time
+              Id: g=4dfb1e14b8569a968c6cec119691f787
+              Type: PropertyType
+              DataType: UtcTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: ReceiveTime
+              Id: g=cd6fb925a2e13b24f314e71b0dd3ef2c
+              Type: PropertyType
+              DataType: UtcTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: Message
+              Id: g=fa640208f2da0cf3588f62aa6128b105
+              Type: PropertyType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            - Name: Severity
+              Id: g=c565247c9786f6f02457cf774b4278ef
+              Type: PropertyType
+              DataType: UInt16
+              Value: 0
+      - Name: ChangePasswordFormOutputMessage
+        Id: g=f293738acc72e81eb6dc040dbd887f8a
+        Type: Label
+        Children:
+        - Name: Text
+          Id: g=30ceab419326f53889a0e274b6d43447
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Children:
+          - Name: DynamicLink
+            Id: g=ef97b13e6710d94416b45200debe88de
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../Message"
+        - Name: LoginChangePasswordFormOutputMessageLogic
+          Id: g=22c0677e6a1c37cb802829cd7236807d
+          Type: NetLogic
+          Children:
+          - Class: Method
+            Name: SetOutputMessage
+            Id: g=cd1ca6e1e573a1308de735d392a3444a
+            Children:
+            - Name: InputArguments
+              Id: g=2efafbe056c770bd72d333af05f0b212
+              Type: BaseVariableType
+              DataType: Argument
+              ReferenceType: HasProperty
+              ValueRank: OneDimension
+              ArrayDimensions: [0]
+              Value: [{"TypeId":{"Id":296},"Body":{"Name":"resultCode","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+          - Class: Reference
+            Target: g=f44db4d571ad74dd65d3ada587294c7f
+            Direction: Forward
+        - Name: Message
+          Id: g=5e4a0bafe788b507492a46d650599dbc
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+          Children:
+          - Name: KeyValueConverter1
+            Id: g=5d78239881f476cd9f3b8db1fa195443
+            Type: ValueMapConverter
+            Children:
+            - Name: Source
+              Id: g=3b4898aa05929351ddbe04f97ad06fa4
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Id: g=2afc7a8b5f70c33affafaf2bc4c69efc
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../ChangePasswordResultCode"
+            - Name: Pairs
+              Id: g=c23c970b8c6f34bbea0736d8af32a9cb
+              Type: BaseObjectType
+              ModellingRule: None
+              Children:
+              - Name: Pair
+                Id: g=8b898658566f1bf16ee8386f89ac8736
+                Type: ValueMapPair
+                ModellingRule: None
+                Children:
+                - Name: Key
+                  Id: g=f185c88d85fcd5a5bbd0c343011c5c26
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  ModellingRule: None
+                  Value: 1
+                - Name: Value
+                  Id: g=7d8d4d10cd53f729c19c6abe4422e6ba
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: None
+                  Value: {"NamespaceIndex":7,"TextId":"LoginChangePasswordFormWrongOldPassword"}
+              - Name: Pair1
+                Id: g=10ff4404526c24e07f013d8e2c903566
+                Type: ValueMapPair
+                ModellingRule: None
+                Children:
+                - Name: Key
+                  Id: g=a9dcba50ec849015ae95901fb9f1b345
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  ModellingRule: None
+                  Value: 2
+                - Name: Value
+                  Id: g=d2a2e8c85f8a9af6272454c8c6b8d48d
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: None
+                  Value: {"NamespaceIndex":7,"TextId":"LoginChangePasswordFormPasswordAlreadyUsed"}
+              - Name: Pair2
+                Id: g=bb63a2729d05c4ab6cb2cd97b91df7c7
+                Type: ValueMapPair
+                ModellingRule: None
+                Children:
+                - Name: Key
+                  Id: g=9ca14a64d8964e682641b1f83011266e
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  ModellingRule: None
+                  Value: 3
+                - Name: Value
+                  Id: g=65145155c362ad48e680274af4deea8b
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: None
+                  Value: {"NamespaceIndex":7,"TextId":"LoginChangePasswordFormPasswordChangedTooRecently"}
+              - Name: Pair3
+                Id: g=c1a22bbad58fd43ff5c68dd129cbf05e
+                Type: ValueMapPair
+                ModellingRule: None
+                Children:
+                - Name: Key
+                  Id: g=4d917104a00ba286fbb92c07de58c032
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  ModellingRule: None
+                  Value: 4
+                - Name: Value
+                  Id: g=95c018b9105ee2d684567df8c07c667b
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: None
+                  Value: {"NamespaceIndex":7,"TextId":"LoginChangePasswordFormPasswordTooShort"}
+              - Name: Pair4
+                Id: g=5ffb47b61acab38ec06635c5c21d2556
+                Type: ValueMapPair
+                ModellingRule: None
+                Children:
+                - Name: Key
+                  Id: g=8e8d9c531865423bcb1d42a7540c7a13
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  ModellingRule: None
+                  Value: 5
+                - Name: Value
+                  Id: g=e1a37b77afb26bf3bd80dcedf8b9a868
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: None
+                  Value: {"NamespaceIndex":7,"TextId":"LoginChangePasswordFormUserNotFound"}
+              - Name: Pair5
+                Id: g=8bd03ba54aac8b0c5e6c916899c77336
+                Type: ValueMapPair
+                ModellingRule: None
+                Children:
+                - Name: Key
+                  Id: g=3b9aa7585ac586af159b5d4bb9ad8eee
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  ModellingRule: None
+                  Value: 6
+                - Name: Value
+                  Id: g=e39791a16cf9a9242ff7a5366fc7cf4f
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: None
+                  Value: {"NamespaceIndex":7,"TextId":"LoginChangePasswordFormUnsupportedOperation"}
+              - Name: Pair6
+                Id: g=4c825078bf279a9a49d63dae92224e5a
+                Type: ValueMapPair
+                ModellingRule: None
+                Children:
+                - Name: Key
+                  Id: g=d20045da2595acbe9fe081e71d595f05
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  ModellingRule: None
+                  Value: 7
+                - Name: Value
+                  Id: g=f465826df9053f698065b74683346190
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: None
+                  Value: {"NamespaceIndex":7,"TextId":"LoginChangePasswordFormPasswordsDoNotMatch"}
+        - Name: ChangePasswordResultCode
+          Id: g=a8ab4346fdec09e16067d6bfa86396c5
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: 0
+      - Name: TopMargin
+        Id: g=65a703276d0955c6ebec3a074054ab0b
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: Height
+        Id: g=62ff40a795ac97efa2189f97b675a5fd
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 260.0
+  - Name: UserWithExpiredPassword
+    Id: g=38ffbedb491000d7756d6042eb02c91e
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=04d96cb128971805ba8ed39a612feb56
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+- Name: LoginChangePasswordForm
+  Id: g=fc0d46c3cf6fc6f7faace8fa13bde2b5
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=1bda066656ab1b2c19010eac02400992
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=cdb2019e9cc8dae04d39174ad301ff90
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Label1
+    Id: g=ed78c391b8fa950e41d5c6d2a93c231c
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=3dc9fe440b6f2fd210ed26f291966382
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"Old password"}
+    - Name: LeftMargin
+      Id: g=8465c3937d8089e2e9f8a82086439d54
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 5.0
+    - Name: TopMargin
+      Id: g=d8dcf2aeb3f5318706068a2973e8ad97
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: Width
+      Id: g=8c09e16f7d20d735010a6c44defb6f80
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 145.0
+  - Name: OldPassword
+    Id: g=343ce52b1b610d7967842ff92e9aa2ab
+    Type: TextBox
+    Children:
+    - Name: Text
+      Id: g=f8bb7420d07394e5c5917f7a209b3e13
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Width
+      Id: g=7e5dfb02a864ed25981b71e64f85a1e1
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 135.0
+    - Name: TopMargin
+      Id: g=04d11c6e546e4b964943ff9cc89f54b8
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 5.0
+    - Name: LeftMargin
+      Id: g=55d4729cea23d3b309c1c4dbf5c28e88
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 150.0
+    - Name: PlaceholderText
+      Id: g=138b9235d65950421def65a311f8afcb
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"Old password"}
+    - Name: ContentType
+      Id: g=e5060ce0620bbb1ef3304e187e2aff5c
+      Type: BaseVariableType
+      DataType: InputTypeEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: ValueChangeBehaviour
+      Id: g=083e421bd459b0034858de255667fd96
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
+      Value: 1
+  - Name: Label2
+    Id: g=9c388fe9f12d44105f64a1669e33c2f4
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=0baf6cf806e0d2bb16e90f29e54d72a6
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"New password"}
+    - Name: LeftMargin
+      Id: g=1522e222428524310bbc3563e58f1d37
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 5.0
+    - Name: TopMargin
+      Id: g=74f25d55520863189d6c6cc49896187a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 56.0
+    - Name: Width
+      Id: g=c6d687f11321ee076efae3e8ab4a4e9d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 145.0
+  - Name: NewPassword
+    Id: g=a5353dc7b9193ee99df9d989ced35140
+    Type: TextBox
+    Children:
+    - Name: Text
+      Id: g=5a11b0e25caae49ac405f72e08a9caff
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Width
+      Id: g=5ed80423933703d676371fd2426d3d1d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 135.0
+    - Name: TopMargin
+      Id: g=37d0c6fb3a55012fba65f697cd99e73d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 51.0
+    - Name: LeftMargin
+      Id: g=75555c3f417ffecdd26288c2e0e206eb
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 150.0
+    - Name: PlaceholderText
+      Id: g=a98e06b2531ad373c33c0e063187cd0d
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"New password"}
+    - Name: ContentType
+      Id: g=a203359dfe779cadb483fa9b11d6c06c
+      Type: BaseVariableType
+      DataType: InputTypeEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: ValueChangeBehaviour
+      Id: g=bfe08fc692cb6882f30f26ae29bc63fc
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
+      Value: 1
+  - Name: Label3
+    Id: g=78dea5d326b648bf0ecc39c4672c3959
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=bef47b46181a639f64a69bb6f960321f
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"Confirm password"}
+    - Name: LeftMargin
+      Id: g=3cee141722affea80e2319f65127ffec
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 5.0
+    - Name: TopMargin
+      Id: g=56423f8346c2fd2d5b67b47e80297946
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 103.0
+    - Name: Width
+      Id: g=e7a38c44482b0565fc448ce124c91cc3
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 145.0
+  - Name: ConfirmPassword
+    Id: g=abd8698582a84d061ebff2d9bf30a1b6
+    Type: TextBox
+    Children:
+    - Name: Text
+      Id: g=4d5047aed66c92c6b08b6ae10c1c0199
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Width
+      Id: g=aa5303038ff0a6b5059a5072e33bc812
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 135.0
+    - Name: TopMargin
+      Id: g=5d2c7baf471620614997d69decf12477
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 98.0
+    - Name: LeftMargin
+      Id: g=17cfbbff2f68cc2d768e5d95fcebd0b2
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 150.0
+    - Name: PlaceholderText
+      Id: g=34db7f40e1ccd2ac8b8c432f6f78385c
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"Confirm password"}
+    - Name: ContentType
+      Id: g=9ff56c23f17db3199abf7715f5f69693
+      Type: BaseVariableType
+      DataType: InputTypeEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: ValueChangeBehaviour
+      Id: g=24a3b88b8ff967661dec96360943ee68
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
+      Value: 1
+  - Name: ChangePasswordButton
+    Id: g=fe34a3c7d32c6f19f963dca1e54b28b9
+    Type: Button
+    Children:
+    - Name: Text
+      Id: g=537dafa63055be752e1bf2f0a98a40ee
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"Change password"}
+    - Name: TopMargin
+      Id: g=95612d08c9e200ef8569508805b5a6e7
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 155.0
+    - Name: HorizontalAlignment
+      Id: g=b9958183c1fc2a75c6a31b122b8f43a6
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Appearance
+      Id: g=04871b1268f0b96878f0bc6dceb5da07
+      Type: BaseVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "accent"
+    - Name: LoginChangePasswordButtonLogic
+      Id: g=c874f600e1bbfa2ee06c36515515a177
+      Type: NetLogic
+      Children:
+      - Class: Method
+        Name: PerformChangePassword
+        Id: g=f1305c0ed1577b7b4e4d535c1be4762a
+        Children:
+        - Name: ns=0;InputArguments
+          Id: g=8761cde5153d9e4a22a177ab52950167
+          Type: BaseVariableType
+          DataType: Argument
+          ReferenceType: HasProperty
+          ValueRank: OneDimension
+          ArrayDimensions: [0]
+          Value: [{"TypeId":{"Id":296},"Body":{"Name":"oldPassword","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"newPassword","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"confirmPassword","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Name: MouseClickEventHandler1
+      Id: g=4ce0ec31492eab85ec669ec8f7d17e4a
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=0b5931bd1d3d3e9805999bb3a9fcc069
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Id: g=7d02b7084dd65845f500cc1d568cf73f
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=6d7196d836c50621422a7e29f7cc42a6
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Id: g=af65e121212d1a1936f9935a6cc5932e
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=d458fef010a41e676bc8b5d2aa332658
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Id: g=61cacbea7df98f314d36240754eab86d
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../LoginChangePasswordButtonLogic@NodeId"
+              Children:
+              - Name: Mode
+                Id: g=e0d0f2a8404c4983b17b77050b6029d3
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Id: g=4ef72b10fe5ffeb63d9744041dfa83eb
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "PerformChangePassword"
+          - Name: InputArguments
+            Id: g=8969ae238fc8533a37e69f70420c8c4e
+            Type: BaseObjectType
+            Children:
+            - Name: oldPassword
+              Id: g=480f5439da4c7056d8069dbfbfdcdf64
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Id: g=0d82e625e22db5550d8a0b4e3067f800
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../OldPassword/Text"
+                Children:
+                - Name: Mode
+                  Id: g=f6fcd472d89a96160dfb07df68f9dd7b
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: newPassword
+              Id: g=ff8ae4140aa95130a837a6329f7a157a
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Id: g=6383285e055be1d60d13695e79a0b1e5
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../NewPassword/Text"
+                Children:
+                - Name: Mode
+                  Id: g=09454bc69dc3c8a5e134d8e44c85a410
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: confirmPassword
+              Id: g=d831f4672da8c84c5cd7d1da3635a6e2
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Id: g=b9e86a8b5016e387bfafda20957ce9e2
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../ConfirmPassword/Text"
+                Children:
+                - Name: Mode
+                  Id: g=0cd0e8d9fe4e62e7410eed021a512f5c
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+          - Name: OutputArguments
+            Id: g=b7440f23db74e601ce3de839260c967b
+            Type: BaseObjectType
+            Children:
+            - Name: resultCode
+              Id: g=67382fe80e03cb95bdc1cccc0ee58ba8
+              Type: BaseDataVariableType
+              DataType: Int32
+              Value: 0
+        - Name: MethodContainer2
+          Id: g=fc641ba599acf90379aad5adfc24fda0
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Id: g=b489c1f17f0c2465ef1b801006e88d5c
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=05ba8555b6217f970e28cb83135d3eea
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Id: g=16892eaa09f5f5e68668257af9fc1133
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../ChangePasswordFormOutputMessage/LoginChangePasswordFormOutputMessageLogic@NodeId"
+              Children:
+              - Name: Mode
+                Id: g=5116f402c02cb8b307569d34bb1db268
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Id: g=3da2f48d2a8b139168373d07c8a1a046
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "SetOutputMessage"
+          - Name: InputArguments
+            Id: g=641d3e65ba26f2504b651b4ff380aed8
+            Type: BaseObjectType
+            Children:
+            - Name: message
+              Id: g=cd1ddd65afab8c59551a0165f398c078
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+              Children:
+              - Name: KeyValueConverter1
+                Id: g=10d80af123216bbfe769f99dad2ee60c
+                Type: ValueMapConverter
+                Children:
+                - Name: Source
+                  Id: g=1e5ae6ac50e3d86ad610de6f74c5829b
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Id: g=1660bd375e6659a1ab730b2b44f66503
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../MethodContainer1/OutputArguments/resultCode"
+                - Name: Pairs
+                  Id: g=a59a8cbb662883db3d493e024b1820d3
+                  Type: BaseObjectType
+                  ModellingRule: None
+                  Children:
+                  - Name: Pair
+                    Id: g=12d0952165c736e40df1bc1e015f4a44
+                    Type: ValueMapPair
+                    ModellingRule: None
+                    Children:
+                    - Name: Key
+                      Id: g=45b3d220189b4e97d6740d1aa2df2ba6
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ModellingRule: None
+                      Value: 0
+                    - Name: Value
+                      Id: g=10f4f56f2172b214a8e9e461ecfa2567
+                      Type: BaseDataVariableType
+                      DataType: String
+                      ModellingRule: None
+                      Value: "Password changed successfully"
+                  - Name: Pair1
+                    Id: g=c631f5a8d56d0c15d59c8b11a28e1bf2
+                    Type: ValueMapPair
+                    ModellingRule: None
+                    Children:
+                    - Name: Key
+                      Id: g=da633a7fd5d614e762b9bc556c86684d
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ModellingRule: None
+                      Value: 1
+                    - Name: Value
+                      Id: g=7e1dcb48abd4d4bef19b1c377bf10ccd
+                      Type: BaseDataVariableType
+                      DataType: String
+                      ModellingRule: None
+                      Value: "Wrong old password"
+                  - Name: Pair2
+                    Id: g=78d3556ce73d37967f665ce424130025
+                    Type: ValueMapPair
+                    ModellingRule: None
+                    Children:
+                    - Name: Key
+                      Id: g=6c1176144b86f7fefe0c6c148fc046a2
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ModellingRule: None
+                      Value: 2
+                    - Name: Value
+                      Id: g=8863ae621f273bdfa2525852a07428ff
+                      Type: BaseDataVariableType
+                      DataType: String
+                      ModellingRule: None
+                      Value: "Password already used"
+                  - Name: Pair3
+                    Id: g=fbb73be60fa6f8de5472cd82e5828c1d
+                    Type: ValueMapPair
+                    ModellingRule: None
+                    Children:
+                    - Name: Key
+                      Id: g=79e9f77b3dbcf10edb91f78aa6c4632c
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ModellingRule: None
+                      Value: 3
+                    - Name: Value
+                      Id: g=20f22e1296d4a76e60fbfd9db2b006bc
+                      Type: BaseDataVariableType
+                      DataType: String
+                      ModellingRule: None
+                      Value: "Password changed too recently"
+                  - Name: Pair4
+                    Id: g=25f60b4d179c85781e5a46692804405e
+                    Type: ValueMapPair
+                    ModellingRule: None
+                    Children:
+                    - Name: Key
+                      Id: g=fbe1cf9ad47e6314df282b8cbe0bf1cf
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ModellingRule: None
+                      Value: 4
+                    - Name: Value
+                      Id: g=10c319229681e7b327733595e52e8ce0
+                      Type: BaseDataVariableType
+                      DataType: String
+                      ModellingRule: None
+                      Value: "Password too short"
+                  - Name: Pair5
+                    Id: g=b3cb609cea6bf09051c9043dff43027f
+                    Type: ValueMapPair
+                    ModellingRule: None
+                    Children:
+                    - Name: Key
+                      Id: g=f6432fd7834fbdf1c0b8b9de1f7bb6a9
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ModellingRule: None
+                      Value: 5
+                    - Name: Value
+                      Id: g=571f8170580e9daf696b54b73454d78b
+                      Type: BaseDataVariableType
+                      DataType: String
+                      ModellingRule: None
+                      Value: "User not found"
+                  - Name: Pair6
+                    Id: g=7b8a6817c7d122384f9e45eb0c73c4f3
+                    Type: ValueMapPair
+                    ModellingRule: None
+                    Children:
+                    - Name: Key
+                      Id: g=aec8e9dcfb2b5f6b0261e89903ccfc60
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ModellingRule: None
+                      Value: 6
+                    - Name: Value
+                      Id: g=535917508405c748dffb1fe465929de9
+                      Type: BaseDataVariableType
+                      DataType: String
+                      ModellingRule: None
+                      Value: "Unsupported operation"
+                  - Name: Pair7
+                    Id: g=51621f254068abe5001f80dcccfd3000
+                    Type: ValueMapPair
+                    ModellingRule: None
+                    Children:
+                    - Name: Key
+                      Id: g=580c451e682a9f781516f41125aa0287
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ModellingRule: None
+                      Value: 7
+                    - Name: Value
+                      Id: g=a45b4104ee382f3c3efe95b35f4e246e
+                      Type: BaseDataVariableType
+                      DataType: String
+                      ModellingRule: None
+                      Value: "Passwords do not match"
+      - Name: EventArguments
+        Id: g=25428c9356315655e4de47f86e13f8a0
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Id: g=35b4278bbb116cf84c56107620310496
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Id: g=c4cd24f6142a44846807c7dc00ee75cd
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Id: g=c838dd4c6af0e03ad43dafeaa8d029c9
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Id: g=9fdc46596afd80371afe88bd9493668f
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Id: g=9dce99e6624dd032ea37ea819be6577e
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Id: g=eb35d164e817284666ba31fd791ddc0a
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Id: g=d210bf300f6a5027d0b486451e720675
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Id: g=9a26201c61441941738dfe8d1feccf0b
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: ChangePasswordFormOutputMessage
+    Id: g=65eec6b3ca4480ab491865e641c614ec
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=99ea81225d11db6c2fe27b1e0f8065bb
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Id: g=6fb09c3044ec2635fc3a7c1d7696f8ff
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../Message"
+    - Name: TopMargin
+      Id: g=67a609395955010bb16a2fb0b9ac4164
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 210.0
+    - Name: LoginChangePasswordFormOutputMessageLogic
+      Id: g=37c16182efd8d9f15295682e47c321ea
+      Type: NetLogic
+      Children:
+      - Class: Method
+        Name: SetOutputMessage
+        Id: g=f44db4d571ad74dd65d3ada587294c7f
+        Children:
+        - Name: ns=0;InputArguments
+          Id: g=ccdc004dccdc062d4c2b8a2c3a1728de
+          Type: BaseVariableType
+          DataType: Argument
+          ReferenceType: HasProperty
+          ValueRank: OneDimension
+          ArrayDimensions: [0]
+          Value: [{"TypeId":{"Id":296},"Body":{"Name":"resultCode","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Name: Message
+      Id: g=e299a7b43b1368b7ec564ad037d5cee4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: HorizontalAlignment
+      Id: g=4891c3dd38acf41fd96c5ec1a2299460
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+- Name: Logout
+  Id: g=2eebfd3def044e747aa57952fc13c70d
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Id: g=52c0e8c2c9312d7df9ebfbd81ce7633a
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=6e0d97ec6535066bbd01a9efd040cc7c
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Button1
+    Id: g=36bfe0ce810b28d2f09ad83a4f79d5cc
+    Type: Button
+    Children:
+    - Name: Text
+      Id: g=576ea4b605f53b28fcd34b71ada17942
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"Logout"}
+    - Name: HorizontalAlignment
+      Id: g=0c0bf00d471b839dc13a89cb80e6d9d9
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Id: g=1670ad970d303b0f740039fa89306f79
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Appearance
+      Id: g=df6a70db67a790666dd31833cbf5a90d
+      Type: BaseVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "accent"
+    - Name: MouseClickEventHandler1
+      Id: g=c64b178a36f661a455d3e3b38edb18ee
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=1b5af3b7026591c6d5ff33edea3caeff
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Id: g=0540c4e692f1df7126e28ac3ae53d073
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=10a82c94e7d3ae08987f408778fe02bd
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Id: g=c37c06ca841eceb9b10a90bd0fbae566
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Id: g=50bc5e5950cee3195da55d709eb7327d
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Id: g=e169f99e9935a46e85fc5c30d244eb23
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Session}@NodeId"
+              Children:
+              - Name: Mode
+                Id: g=070df1ad1d8bcf3bf942fabc027cc7a7
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Id: g=250975a52acc06b6a30c4aeae23ae650
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Logout"
+      - Name: EventArguments
+        Id: g=9ac60456dfd84cfa0ea2fb3fd51e7a86
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Id: g=936ecbfe5f1f142af439888c81237ea1
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Id: g=0ae4a9deefde9d5db3cb9c74f628d695
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Id: g=547ba30e22ddcf453b25902991f46cd5
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Id: g=1c075978a4bd80c68c9a0f3463264164
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Id: g=f29a5d0ec968081550d88f687287d1f0
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Id: g=b3133e7add6a01e30ef516b9aa14bff3
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Id: g=ffe6a421765c917c42fe25b6a38df7c9
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Id: g=422197d96f33775eff23665530aeaa50
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: CurrentUserText
+    Id: g=56e20e0a6d653f3f3773e34b83f12ea8
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=8ea5a15da4280da5a4a27927efdebaca
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"Current User:"}
+    - Name: HorizontalAlignment
+      Id: g=386de3045140d0a25523c451eff0eb58
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: CurrentUserName
+    Id: g=6523ce9922e78ce7ca08962a1daa1b4b
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=32417d7373ecc2ec900c73cae0ce90ca
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Id: g=dee2f59fb86b2d6af37f07839c196d09
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Session}/User@BrowseName"
+    - Name: HorizontalAlignment
+      Id: g=94216b1a6154ede8d72b0a87d4903283
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: TopMargin
+      Id: g=a461fd9c036c500a4791102107acaaf2
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
