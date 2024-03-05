@@ -6401,6 +6401,34 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 38.0
+  - Name: Label1
+    Id: g=39a147f5d2ce1c6b0a412adea6ea19f8
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=fb81ea87ab19d2b28b9dbe62c12608fe
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Alessio"}
+    - Name: LeftMargin
+      Id: g=1495a76f240979a3ee40ac3d5af48ee7
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TopMargin
+      Id: g=c23c69e1990305d9f0e29e5b263ec670
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 516.0
+    - Name: FontSize
+      Id: g=9962d8b8e077ee8d76e2f14c253056aa
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
 - Name: Screen9
   Id: g=f4a2b0e56dfeb2b94d0b9ae776e5da6d
   Supertype: Screen
