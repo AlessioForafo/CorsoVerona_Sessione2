@@ -6456,6 +6456,39 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 130.0
+  - Name: LED2
+    Id: g=b60b91ab4942c4db0da2e4337429cdc2
+    Type: Led
+    Children:
+    - Name: Active
+      Id: g=2d4d3feb262eac050086846595569593
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Width
+      Id: g=12fcc4c7c03ef418d632a64e6b9b1423
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Id: g=6f8cd32dabddc6a86aa43e3a7d37b0f0
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: LeftMargin
+      Id: g=1a4fdbdf73c9b07322ea579a36454f23
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 360.0
+    - Name: TopMargin
+      Id: g=85ff2f338820353fe68236f200c9d409
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 120.0
 - Name: Screen9
   Id: g=f4a2b0e56dfeb2b94d0b9ae776e5da6d
   Supertype: Screen
