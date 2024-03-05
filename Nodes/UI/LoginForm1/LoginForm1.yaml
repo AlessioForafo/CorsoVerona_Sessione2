@@ -62,6 +62,7 @@ Children:
       Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
   - Class: Reference
     Target: ns=3;i=478
+    Direction: Forward
   - Name: Width
     Id: g=ccf83917cd208c3c46a21001e538958d
     Type: BaseVariableType

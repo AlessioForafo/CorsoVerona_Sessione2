@@ -6394,41 +6394,101 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 60.0
+      Value: 1180.0
     - Name: TopMargin
       Id: g=68a9e1f4c9766f2ea4cd3b2220c1948d
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 38.0
+      Value: 755.0
   - Name: Label1
-    Id: g=39a147f5d2ce1c6b0a412adea6ea19f8
+    Id: g=536a765e61f9117b93a3f30240af73b2
     Type: Label
     Children:
     - Name: Text
-      Id: g=fb81ea87ab19d2b28b9dbe62c12608fe
+      Id: g=cdcefe6d0f3ca24c1381d8bb4795f482
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Alessio"}
+      Value: {"LocaleId":"en-US","Text":"Label1"}
     - Name: LeftMargin
-      Id: g=1495a76f240979a3ee40ac3d5af48ee7
+      Id: g=44e816217ff6769e387de10ef7c7940d
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 30.0
+      Value: 35.0
     - Name: TopMargin
-      Id: g=c23c69e1990305d9f0e29e5b263ec670
+      Id: g=5321a69e134e1667d06e6814e7571151
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 516.0
-    - Name: FontSize
-      Id: g=9962d8b8e077ee8d76e2f14c253056aa
+      Value: 25.0
+  - Name: LED1
+    Id: g=e6290b416a4da2bbe200c2cf023db6f1
+    Type: Led
+    Children:
+    - Name: Active
+      Id: g=13fbcd622461deda3c983fa61f0cc71e
       Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Width
+      Id: g=883be7b5c43bc5560b1c44b01d29fac3
+      Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 60.0
+      Value: 50.0
+    - Name: Height
+      Id: g=cd435f9b7567d79cbb51d86ae4f298f8
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: LeftMargin
+      Id: g=4b15ca5418c8a2f24ea0676132922587
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 280.0
+    - Name: TopMargin
+      Id: g=031bc1d5c0b1e073b6a66bb98fd440c8
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+  - Name: LED2
+    Id: g=b60b91ab4942c4db0da2e4337429cdc2
+    Type: Led
+    Children:
+    - Name: Active
+      Id: g=2d4d3feb262eac050086846595569593
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Width
+      Id: g=12fcc4c7c03ef418d632a64e6b9b1423
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Id: g=6f8cd32dabddc6a86aa43e3a7d37b0f0
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: LeftMargin
+      Id: g=1a4fdbdf73c9b07322ea579a36454f23
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 360.0
+    - Name: TopMargin
+      Id: g=85ff2f338820353fe68236f200c9d409
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 120.0
 - Name: Screen9
   Id: g=f4a2b0e56dfeb2b94d0b9ae776e5da6d
   Supertype: Screen

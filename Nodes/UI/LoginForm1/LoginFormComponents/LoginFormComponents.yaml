@@ -77,6 +77,7 @@ Children:
       AccessLevel: Read
     - Class: Reference
       Target: ns=3;i=480
+      Direction: Forward
     - Name: Width
       Id: g=8fd104c4eb82b9c60648a03494e71aff
       Type: BaseVariableType
@@ -557,6 +558,7 @@ Children:
   Children:
   - Class: Reference
     Target: ns=3;i=519
+    Direction: Forward
   - Name: Width
     Id: g=5579cb1403ac7bc6d9e7396c94767fac
     Type: BaseVariableType
@@ -723,6 +725,7 @@ Children:
           Children:
           - Class: Reference
             Target: g=f1305c0ed1577b7b4e4d535c1be4762a
+            Direction: Forward
         - Name: MouseClickEventHandler1
           Id: g=ca7c2d2bfb0034a34140a26a0a46ae8b
           Type: EventHandler
@@ -805,6 +808,65 @@ Children:
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "../../../../../../ConfirmPassword/Text"
+              - Name: OutputArguments
+                Id: g=dacf91b262437bb587cc4ef6528ea454
+                Type: BaseObjectType
+                Children:
+                - Name: resultCode
+                  Id: g=e9937aa73fe39f27a78b5992c87310ba
+                  Type: BaseDataVariableType
+                  DataType: Int32
+                  Value: 0
+            - Name: MethodContainer2
+              Id: g=e08af8a32cce1d12c43dc7238a1d0871
+              Type: BaseObjectType
+              Children:
+              - Name: ObjectPointer
+                Id: g=ce36ad8ebba9c761f55e643be96e49d1
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Id: g=d826afff088b4bb6a9106139d9675116
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Id: g=8764b2deada8f2ec782e0dd144318432
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../ChangePasswordFormOutputMessage/LoginChangePasswordFormOutputMessageLogic@NodeId"
+              - Name: Method
+                Id: g=cad2e1786bc99c0f1ef6cf9ebfd2fdcf
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "SetOutputMessage"
+              - Name: InputArguments
+                Id: g=1a3bd424a5a0ac0f78793bbe495e7dd2
+                Type: BaseObjectType
+                Children:
+                - Name: message
+                  Id: g=d63b0cba9d3cef833bfb10d968730020
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+                  Children:
+                  - Name: KeyValueConverter1
+                    Id: g=dfb9f1dd6e37fb56e7d354beddae8a55
+                    Type: ValueMapConverter
+                    Children:
+                    - Name: Source
+                      Id: g=bda0a4c440e4989c643423057fbf9162
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Id: g=e123e00d08a0978978632f877dc7f7ee
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../MethodContainer1/OutputArguments/resultCode"
           - Name: EventArguments
             Id: g=d0c28c139651574c7fc8849614fd33d4
             Type: MouseClickEvent

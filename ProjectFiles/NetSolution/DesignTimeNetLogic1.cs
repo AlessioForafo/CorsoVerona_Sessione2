@@ -15,6 +15,7 @@ using FTOptix.SQLiteStore;
 using FTOptix.ODBCStore;
 using FTOptix.Recipe;
 using FTOptix.OPCUAServer;
+using FTOptix.Alarm;
 #endregion
 
 public class DesignTimeNetLogic1 : BaseNetLogic
